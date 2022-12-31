@@ -1,5 +1,49 @@
-body{
-    background-color: antiquewhite;
+*{
     font-size: 26px;
-    
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+    
+
+
+body{
+   
+   background-color: coral;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+        text-align: center;
+        font-size: 2em;
+}
+
+#count{
+    text-align: center;
+    margin: 0 10px;
+    width: 10vw;
+}
+#dec:hover, #inc:hover{
+    color: white;
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #count{
+        margin: 10px 0;
+    }
+
+    #ddec, #inc{
+        width: 100px;
+    }
+  }
